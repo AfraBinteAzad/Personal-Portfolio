@@ -35,6 +35,47 @@ html,body{
   transition: transform 0.2s ease;
 }
 
+.decor{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#banner-left{
+  margin-left: 0px;
+  transform: rotate(40deg);
+  position: relative;
+  bottom: 560px;
+  animation: pulse-left 18s ease-in-out infinite;
+}
+
+
+@keyframes pulse-left{
+  0%{ transform: rotate(40deg) scale(1);}
+  50%{ transform: rotate(40deg) scale(1.05);}
+  100%{ transform: rotate(40deg) scale(1.03);}
+}
+
+#banner-right{
+ position: relative;
+ margin-right: 0px;
+ bottom: 1260px;
+ transform: rotate(-180deg);
+ animation: pulse-right 18s ease-in-out infinite;
+}
+
+@keyframes pulse-right{
+  0%{ transform: rotate(-180deg) scale(1);}
+  50%{ transform: rotate(-180deg) scale(1.05);}
+  100%{ transform: rotate(-180deg) scale(1.03);}
+}
+
+
+#banner-right:hover{
+  transform: scale(1.2) rotate(-180deg);
+  transition: transform 0.2s ease;
+}
+
 
 #id-1{
   font-size: 45px;
@@ -47,6 +88,13 @@ html,body{
   font-weight: bolder;
   margin: 0.5px;
   margin-top: 0px;
+  animation: port 12s ease-in-out infinite;
+}
+
+@keyframes port{
+  0%{ transform: scale(1); color: white;}
+  60%{ transform: scale(1.05); color: black;}
+  100%{ transform: scale(1); color: white;}
 }
 
 #id-3{
@@ -75,7 +123,7 @@ html,body{
 }
 
 
-.banner p:hover{
+.banner-text:hover{
   transform: scale(1.09);
   transition: transform 0.2s ease;
   color: white;
@@ -98,8 +146,9 @@ html,body{
 
 
 .container:hover{
-  transform: scale(1.03);
+  transform: scale(1.02);
   transition: transform 0.2s ease;
+
 }
 
 .description{
@@ -115,7 +164,7 @@ html,body{
 
 
 .description span{
-  color: #afc1d5;
+  color: #83acdc;
   font-weight: bolder;
   font-size: 30px;
   margin-left: 2px;
@@ -124,6 +173,7 @@ html,body{
 .description span:hover{
   color: black;
   background-color: #afc1d5;
+  
 }
 
 #image-left{
@@ -131,23 +181,29 @@ html,body{
   right: -120px;
   bottom: 100px;
   transform: rotate(-20deg);
+  animation: intro-left 10s ease-in-out infinite;
 }
 
-#image-left:hover{
-  transform: scale(1.07) rotate3d(1, 1, 1, 5deg);
-  transition: transform 0.2s ease;
+@keyframes intro-left{
+  0%{ transform: rotate(-20deg) ;}
+  50%{ transform: rotate(8deg) ;}
+  100%{ transform: rotate(-20deg) ;}
 }
 
 #image-right{
   position: relative;
   left: -120px;
+  bottom: 10px;
   transform: rotate(20deg);
+  animation: intro-right 10s ease-in infinite;
 }
 
-#image-right:hover{
-  transform: scale(1.07) rotate3d(1, 1, 1, -5deg);
-  transition: transform 0.2s ease;
+@keyframes intro-right{
+  0%{ transform: rotate(20deg) ;}
+  50%{ transform: rotate(-8deg) ;}
+  100%{ transform: rotate(20deg) ;}
 }
+
 
 
 
