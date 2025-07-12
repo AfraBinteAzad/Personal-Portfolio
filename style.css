@@ -10,9 +10,8 @@ html,body{
   font-weight: bold;
   font-style: normal;
   cursor: pointer;
-  background-color: #a7bdd6;
+  background-color: #afc1d5;
 }
-
 
 .banner{
   display: flex;
@@ -22,6 +21,7 @@ html,body{
   margin: 150px;
   gap: 5px;
   position: relative;
+  perspective: 1000px;
 }
 
 .banner img{
@@ -58,10 +58,14 @@ html,body{
   
 }
 
-#id-4{
+.sub-section{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+}
+
+#id-4{
   font-size: 20px;
   font-style: normal;
   color: rgb(100, 95, 95);
@@ -76,5 +80,76 @@ html,body{
   transition: transform 0.2s ease;
   color: white;
 }
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf6e3;
+  border-radius: 15px;
+}
+
+
+.container:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+.description{
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  font-style: italic;
+  border: 1px dashed black;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+
+
+.description span{
+  color: #afc1d5;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-left: 2px;
+}
+
+.description span:hover{
+  color: black;
+  background-color: #afc1d5;
+}
+
+#image-left{
+  position: relative;
+  right: -120px;
+  bottom: 100px;
+  transform: rotate(-20deg);
+}
+
+#image-left:hover{
+  transform: scale(1.07) rotate3d(1, 1, 1, 5deg);
+  transition: transform 0.2s ease;
+}
+
+#image-right{
+  position: relative;
+  left: -120px;
+  transform: rotate(20deg);
+}
+
+#image-right:hover{
+  transform: scale(1.07) rotate3d(1, 1, 1, -5deg);
+  transition: transform 0.2s ease;
+}
+
+
+
 
 
