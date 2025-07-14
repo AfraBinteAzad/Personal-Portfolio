@@ -140,87 +140,48 @@ html,body{
 
 .intro{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #afc1d5;
-  margin: 50px;
-  padding: 150px;
-  border-radius: 15px;
+  justify-content:center;
   position: relative;
   bottom: 450px;
-}
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  border: 1px dashed black;
+  color: white;
+  animation: slideDown 1s ease-out forwards;
 }
 
 
-.description{
-  padding: 20px;
-  width: 300px;
+.intro-left{
+  font-size: 110px;
   text-align: center;
-  font-style: normal;
-  border: 1px dashed black;
-  border-radius: 15px;
-  margin: 15px;
-  background-color: #fdf6e3;
+  margin: 50px;
+  margin-bottom: 0px;
+  animation: slideDown 1.2s ease-out forwards;
 }
 
-.description:hover{
-  transform: scale(1.02);
-  transition: transform 0.2s ease;
-
-}
-
-
-.description span{
-  color: #83acdc;
-  font-weight: bolder;
-  font-size: 30px;
-  margin-left: 2px;
-}
-
-.description span:hover{
-  color: black;
-  background-color: #afc1d5;
-  
-}
-
-#image-left{
+.intro-right{
+  margin-top: 0px;
+  font-size: 50px;
+  text-align: center;
+  color: grey;
   position: relative;
-  right: -120px;
-  bottom: 100px;
-  transform: rotate(-20deg);
-  animation: intro-left 10s ease-in-out infinite;
+  bottom: 150px;
+  animation: slideDown 1.2s ease-out forwards;
 }
 
-@keyframes intro-left{
-  0%{ transform: rotate(-20deg) ;}
-  50%{ transform: rotate(8deg) ;}
-  100%{ transform: rotate(-20deg) ;}
+.intro p:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 
-#image-right{
-  position: relative;
-  left: -120px;
-  bottom: 10px;
-  transform: rotate(20deg);
-  animation: intro-right 10s ease-in infinite;
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
-@keyframes intro-right{
-  0%{ transform: rotate(20deg) ;}
-  50%{ transform: rotate(-8deg) ;}
-  100%{ transform: rotate(20deg) ;}
-}
-
-
-
-
 
 
