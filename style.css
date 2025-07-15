@@ -227,89 +227,121 @@ html,body{
   height: 450px;
   text-align: center;
   justify-content: center;
-  border-radius: 50px;
-  
+  border-radius: 50px; 
+  color: black;
 }
 
 #item1{
-    background-color: #4c5880;
+    background-image: url(blue.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item1:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #cf9cf7;
+  background-image: url(teal.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item2{
-    background-color: #B8DEA4;
-
+    background-image: url(green.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 #item2:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #e3a3bd;
+  background-image: url(orange.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item3{
-    background-color: #8fdbd8;
+    background-image: url(red.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item3:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #75b3a4;
+  background-image: url(lavender.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item4{
-    background-color: #FFCBBF;
+    background-image: url(pink.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item4:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #769d61;
+  background-image: url(yellow.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item5{
-    background-color: #769d61;
+    background-image: url(yellow.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item5:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #FFCBBF;
+  background-image: url(pink.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item6{
-    background-color: #75b3a4;
+    background-image: url(lavender.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item6:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #8fdbd8;
+  background-image: url(red.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item7{
-    background-color: #e3a3bd;
+    background-image: url(orange.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item7:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #B8DEA4;
+  background-image: url(green.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #item8{
-    background-color: #cf9cf7;
+    background-image: url(teal.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #item8:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-color: #4c5880;
+  background-image: url(blue.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -479,6 +511,7 @@ html,body{
 
   .container {
     flex-direction: column;
+    width: auto;
     gap: 30px;
     margin: 20px;
   }
@@ -539,6 +572,7 @@ html,body{
 
   .container {
     flex-wrap: wrap;
+    width: auto;
     justify-content: center;
     gap: 40px;
   }
