@@ -196,28 +196,43 @@ html,body{
   margin: 50px;
 }
 
+.title{
+  font-size: 90px;
+  margin-bottom: 0px;
+}
+
+.title:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+
 .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 30px;
   margin: 50px;
+ 
 }
 
+
 .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 350px;
   height: 450px;
   text-align: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 50px;
+  
 }
-
 
 #item1{
     background-color: #4c5880;
-    box-shadow: 0 10px 30px #656b7c;
 }
 
 #item1:hover{
@@ -228,7 +243,7 @@ html,body{
 
 #item2{
     background-color: #B8DEA4;
-    box-shadow: 0 10px 30px #c4dab8;
+
 }
 
 #item2:hover{
@@ -239,7 +254,6 @@ html,body{
 
 #item3{
     background-color: #8fdbd8;
-    box-shadow: 0 10px 30px #a7dad8;
 }
 
 #item3:hover{
@@ -250,7 +264,6 @@ html,body{
 
 #item4{
     background-color: #FFCBBF;
-    box-shadow: 0 10px 30px #fdd4cb;
 }
 
 #item4:hover{
@@ -261,7 +274,6 @@ html,body{
 
 #item5{
     background-color: #769d61;
-    box-shadow: 0 10px 30px #859a7a;
 }
 
 #item5:hover{
@@ -272,7 +284,6 @@ html,body{
 
 #item6{
     background-color: #75b3a4;
-    box-shadow: 0 10px 30px #88b0a6;
 }
 
 #item6:hover{
@@ -283,7 +294,6 @@ html,body{
 
 #item7{
     background-color: #e3a3bd;
-    box-shadow: 0 10px 30px #d5a7ba;
 }
 
 #item7:hover{
@@ -294,10 +304,112 @@ html,body{
 
 #item8{
     background-color: #cf9cf7;
-    box-shadow: 0 10px 30px #e0bff9;
 }
 
 #item8:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #4c5880;
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4,450px);
+  grid-auto-rows: 300px;
+  margin: 150px;
+}
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+#grid-item1{
+  background-color: #4c5880;
+}
+
+#grid-item1:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #cf9cf7;
+}
+
+#grid-item2{
+    background-color: #B8DEA4;
+
+}
+
+#grid-item2:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #e3a3bd;
+}
+
+#grid-item3{
+    background-color: #8fdbd8;
+}
+
+#grid-item3:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #75b3a4;
+}
+
+#grid-item4{
+    background-color: #FFCBBF;
+}
+
+#grid-item4:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #769d61;
+}
+
+#grid-item5{
+    background-color: #769d61;
+}
+
+#grid-item5:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #FFCBBF;
+}
+
+#grid-item6{
+    background-color: #75b3a4;
+}
+
+#grid-item6:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #8fdbd8;
+}
+
+#grid-item7{
+    background-color: #e3a3bd;
+}
+
+#grid-item7:hover{
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  background-color: #B8DEA4;
+}
+
+#grid-item8{
+    background-color: #cf9cf7;
+}
+
+#grid-item8:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
   background-color: #4c5880;
@@ -358,11 +470,36 @@ html,body{
     display: none; 
   }
 
+  .title{
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+
+
   .container {
     flex-direction: column;
     gap: 30px;
     margin: 20px;
   }
+
+  .grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,250px);
+  grid-auto-rows: 100px;
+}
+
+  .grid-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
 
   .item {
     width: 90%;
@@ -394,11 +531,36 @@ html,body{
     bottom: 50px;
   }
 
+.title{
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+
   .container {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
   }
+
+  .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  grid-auto-rows: 200px;
+  gap: 5px;
+}
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
 
   .item {
     width: 300px;
