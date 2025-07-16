@@ -208,141 +208,106 @@ html,body{
 
 
 .container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  margin: 50px;
- 
+  display: grid;
+  grid-template-columns: repeat(4,450px);
+  grid-auto-rows: 300px;
+  margin: 150px;
 }
-
 
 .item{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  height: 450px;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
-  justify-content: center;
-  border-radius: 50px; 
-  color: black;
 }
 
+
 #item1{
-    background-image: url(blue.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #4c64b3;
+  grid-row: span 2;
 }
 
 #item1:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(teal.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #8e55ba;
 }
 
 #item2{
-    background-image: url(green.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
+    background-color: #7efa95;
+    grid-column: span 3;
 }
 
 #item2:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(orange.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ce62df;
 }
 
 #item3{
-    background-image: url(red.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #438ac8;
 }
 
 #item3:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(lavender.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #c4c96f;
 }
 
 #item4{
-    background-image: url(pink.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #37cad2;
 }
 
 #item4:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(yellow.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #416290;
 }
 
 #item5{
-    background-image: url(yellow.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f073e1;
+    grid-row: span 2;
 }
 
 #item5:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(pink.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f326ec;
 }
 
 #item6{
-    background-image: url(lavender.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #51e3bf;
 }
 
 #item6:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(red.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #1fc7d6;
 }
 
 #item7{
-    background-image: url(orange.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #cd2c6c;
 }
 
 #item7:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(green.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #3c8271;
 }
 
 #item8{
-    background-image: url(teal.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #dd4fd3;
 }
 
 #item8:hover{
   transform: scale(1.02);
   transition: transform 0.2s ease;
-  background-image: url(blue.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #3b5dd0;
 }
+
 
 
 
@@ -368,6 +333,7 @@ html,body{
 
 #grid-item1{
   background-color: #4c5880;
+  grid-column: span 2;
 }
 
 #grid-item1:hover{
@@ -389,6 +355,7 @@ html,body{
 
 #grid-item3{
     background-color: #8fdbd8;
+    grid-row: span 2;
 }
 
 #grid-item3:hover{
@@ -398,7 +365,8 @@ html,body{
 }
 
 #grid-item4{
-    background-color: #FFCBBF;
+  background-color: #FFCBBF;
+  grid-row: span 2;
 }
 
 #grid-item4:hover{
@@ -439,6 +407,7 @@ html,body{
 
 #grid-item8{
     background-color: #cf9cf7;
+    grid-column: span 2;
 }
 
 #grid-item8:hover{
@@ -448,157 +417,4 @@ html,body{
 }
 
 
-
-@media (max-width: 768px) {
-  .banner {
-    margin: 20px;
-    padding: 10px;
-  }
-
-  #id-2 {
-    font-size: 60px;
-    padding: 10px;
-  }
-
-  #id-1, #id-3 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .sub-section {
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-    top: -60px;
-  }
-
-  #id-4 {
-    font-size: 16px;
-    top: 0;
-  }
-
-  .intro {
-    bottom: 0;
-    padding: 20px;
-  }
-
-  .intro-left {
-    font-size: 40px;
-    margin: 20px 0;
-  }
-
-  .intro-right {
-    font-size: 24px;
-    bottom: 0;
-  }
-
-  .decor {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  #banner-left, #banner-right {
-    display: none; 
-  }
-
-  .title{
-  font-size: 30px;
-  margin-bottom: 0px;
-}
-
-
-
-  .container {
-    flex-direction: column;
-    width: auto;
-    gap: 30px;
-    margin: 20px;
-  }
-
-  .grid-container{
-  display: grid;
-  grid-template-columns: repeat(2,250px);
-  grid-auto-rows: 100px;
-}
-
-  .grid-item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  font-size: 10px;
-  padding: 20px;
-  text-align: center;
-}
-
-
-  .item {
-    width: 90%;
-    height: auto;
-    padding: 20px;
-  }
-
-  .intro-second {
-    margin: 20px;
-  }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .banner {
-    margin: 30px;
-  }
-
-  #id-2 {
-    font-size: 100px;
-  }
-
-  .intro-left {
-    font-size: 70px;
-  }
-
-  .intro-right {
-    font-size: 36px;
-    bottom: 50px;
-  }
-
-.title{
-  font-size: 50px;
-  margin-bottom: 0px;
-}
-
-
-  .container {
-    flex-wrap: wrap;
-    width: auto;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .grid-container{
-  display: grid;
-  grid-template-columns: repeat(3,300px);
-  grid-auto-rows: 200px;
-  gap: 5px;
-}
-
-.grid-item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  font-size: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-
-  .item {
-    width: 300px;
-    height: 400px;
-  }
-}
 
