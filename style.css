@@ -187,6 +187,93 @@ html,body{
 }
 
 
+.right-ball, .left-ball, .upper-ball{
+  margin: 0px;
+}
+
+.upper-ball div{
+  width: 400px;
+  height: 400px;
+  background-color: #f760bd; 
+  border-radius: 50%;
+  position: relative;
+  left: -600px;
+  top: -60px;
+  animation: float-upper 6s ease-in-out infinite;
+}
+
+@keyframes float-upper{
+  0% {
+    transform: translateY(0px);
+    
+  }
+  50% {
+    transform: scale(1.02) translateY(-30px);
+    background-color: #f5a2d5;
+  }
+  100% {
+    transform: translateY(0px);
+    background-color: #f760bd;
+  }
+}
+
+.right-ball div{
+  width: 450px;
+  height: 450px;
+  background-color: #5390d6; 
+  border-radius: 50%;
+  position: relative;
+  left: -700px;
+  top: -200px;
+  animation: float-right 6s ease-in-out infinite;
+}
+
+@keyframes float-right{
+  0% {
+    transform: translateY(0px);
+    
+  }
+  50% {
+    transform: scale(1.02) translateY(-30px);
+    background-color: #7aa5d5;
+  }
+  100% {
+    transform: translateY(0px);
+    background-color: #5390d6;
+  }
+}
+
+.left-ball div{
+  width: 300px;
+  height: 300px;
+  background-color: #afc1d5; 
+  border-radius: 50%;
+  position: relative;
+  left: 740px;
+  top: 100px;
+  animation: float-left 4s ease-in-out infinite;
+}
+
+@keyframes float-left{
+  0% {
+    transform: translateY(0px);
+    background-color: #afc1d5;
+  }
+  50% {
+    transform: scale(1.02) translateY(-30px);
+    background-color: #70a0d6;
+  }
+  
+  100% {
+    transform: translateY(0px);
+    background-color: #afc1d5;
+  }
+}
+
+
+
+
+
 .intro-second{
   display: flex;
   flex-direction: column;
